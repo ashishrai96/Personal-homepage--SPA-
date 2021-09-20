@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import './about.css';
+@import './edu.css';
+
+:root{
+    --primary: #00829c;
+    --secondary: #eee;
+    --black: #53565a;
+}
+
+body {
+    background-color: var(--secondary);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 1px;
+    
+}
+
+.navbar .nav-item-group {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.navbar .nav-links i {
+    font-size: 25px;
+    margin: 5px;
+    cursor: pointer;
+    color: var(--black);
+}
+.navbar .nav-links a {
+    text-decoration: none !important;
+}
+
+.navbar .nav-item {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+
+.navbar .nav-item:hover {
+    color: var(--primary);
+}
+
+.navbar .nav-item.active {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+footer.footer {
+    position: absolute;
+    bottom: 0;
+    width: 98vw;
+    padding: 10px;
+    display: flex;
+}
+
+footer.footer .footer-body {
+    flex: 1;
+}
+
+footer.footer .footer-body a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+footer.footer .time-container {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+footer.footer .time-container div#time {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Arial;
+    color: var(--black);
+}
