@@ -317,3 +317,21 @@ const submitForm = () => {
     
     document.forms["contactForm"].reset();
 }
+
+const hamburgerHandler = () => {
+    let hem = document.getElementById("hamburger");
+    if(hem.className=="fa fa-bars"){
+        hem.className = "fa fa-times";
+        let menuList = document.getElementsByClassName("nav-item");
+        for(let m of menuList){
+            m.style.display = "block";
+        }
+    }
+    else{
+        hem.className = "fa fa-bars";
+        let menuList = document.getElementsByClassName("nav-item");
+        for(let m of menuList){
+            m.style.display = "none";
+        }
+    }
+}
