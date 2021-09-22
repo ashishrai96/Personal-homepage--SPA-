@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
+@import './home.css';
 @import './about.css';
-@import './edu.css';
+@import './skill.css';
+@import './contact.css';
 
 :root{
     --primary: #00829c;
+    --primary-light: #06a2c1;
     --secondary: #eee;
     --black: #53565a;
+    --gray: #ccc;
+    --deep-gray: #97999b;
 }
 
 body {
     background-color: var(--secondary);
+    color: var(--black);
+    font-family: Arial;
 }
 
 .navbar {
@@ -25,16 +31,6 @@ body {
     display: flex;
     flex: 1;
     justify-content: flex-start;
-}
-
-.navbar .nav-links i {
-    font-size: 25px;
-    margin: 5px;
-    cursor: pointer;
-    color: var(--black);
-}
-.navbar .nav-links a {
-    text-decoration: none !important;
 }
 
 .navbar .nav-item {
@@ -53,21 +49,65 @@ body {
     text-decoration: underline;
 }
 
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-links .link-label {
+    padding: 4px 6px;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 0px 10px;
+    color: var(--black);
+}
+.navbar .nav-links .link-label:hover {
+    color: var(--primary);
+}
+
+
+.navbar .nav-links i {
+    font-size: 25px;
+    margin: 5px;
+    cursor: pointer;
+    color: var(--black);
+}
+.navbar .nav-links a {
+    text-decoration: none !important;
+}
+
+body div#main {
+    margin: 0px 25px 25px;
+    min-height: calc(100vh - 155px);
+    display: flex;
+}
+
 footer.footer {
-    position: absolute;
-    bottom: 0;
-    width: 98vw;
     padding: 10px;
     display: flex;
+    background-color: var(--gray);
+    margin: 0px -8px -8px;
 }
 
 footer.footer .footer-body {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer.footer .footer-body .title {
+    font-weight: 700;
+    color: var(--primary);
 }
 
 footer.footer .footer-body a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--primary);
+    margin: 10px;
 }
 
 footer.footer .time-container {
@@ -80,5 +120,9 @@ footer.footer .time-container div#time {
     font-size: 14px;
     font-weight: 700;
     font-family: Arial;
-    color: var(--black);
+    color: var(--primary);
+}
+
+h1{
+    color: var(--primary);
 }

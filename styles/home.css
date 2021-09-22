@@ -1,0 +1,52 @@
+.home {
+    align-self: center;
+}
+
+.home .home-title {
+    font-size: 30px;
+}
+
+.home .home-head {
+    font-size: 45px;
+    margin: 15px 50px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.home .home-title {
+    font-size: 30px;
+}
+
+.home .home-title .home-text--point {
+    margin: 10px 100px;
+    display: list-item;
+    list-style-type: square;
+}
+
+.home .home-title .home-text--point.bold {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@keyframes toggle{
+    0%{ 
+        font-size: 30px;
+        font-weight: normal;
+        color: var(--black);
+    }
+    25%{ 
+        font-size: 30px;
+        font-weight: normal;
+        color: var(--black);
+    }
+    75%{ 
+        font-size: 30px;
+        font-weight: normal;
+        color: var(--black);
+    }
+    100%{ 
+        font-size: 40px;
+        font-weight: bold;
+        color: var(--primary);
+    }
+}
