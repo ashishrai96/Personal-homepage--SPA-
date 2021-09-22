@@ -47,6 +47,14 @@ footer.footer .footer-body .title {
     color: var(--primary);
 }
 
+@media screen and (max-width:600px) {
+    footer.footer .footer-body div {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
 footer.footer .footer-body a {
     text-decoration: none;
     color: var(--primary);
