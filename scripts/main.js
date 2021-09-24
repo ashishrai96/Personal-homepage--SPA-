@@ -304,7 +304,11 @@ const navigateTo = (optn) => {
     elem.className += " active";
 
     view.innerHTML = menuItems[optn].callback.call(); //getHomeContent.call()
-
+    document.title = menuItems[optn].name + " | Ashish Rai";
+    let hem = document.getElementById("hamburger");
+    if(hem.className!="fa fa-bars"){
+        hamburgerHandler();
+    }
 }
 
 const submitForm = () => {
