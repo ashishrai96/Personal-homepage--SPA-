@@ -61,14 +61,19 @@ const homeContent = [
 
 const getHomeContent = () => {
     return `
-    <div class="home">
-        <div class="home-title">Hello, My name is</div>
-        <div class="home-head">ASHISH RAI</div>
-        <div class="home-title">
-            And I am a,
-            <div class="home-text--point" style="animation: toggle 3s ease 0s infinite alternate;" >${homeContent[0]}</div>
-            <div class="home-text--point" style="animation: toggle 3s ease 2s infinite alternate;" >${homeContent[1]}</div>
-            <div class="home-text--point" style="animation: toggle 3s ease 4s infinite alternate;" >${homeContent[2]}</div>
+    <div class="home-container">
+        <div class="home">
+            <div class="home-title">Hello, My name is</div>
+            <div class="home-head">ASHISH RAI</div>
+            <div class="home-title">
+                And I am a,
+                <div class="home-text--point" style="animation: toggle 3s ease 0s infinite alternate;" >${homeContent[0]}</div>
+                <div class="home-text--point" style="animation: toggle 3s ease 2s infinite alternate;" >${homeContent[1]}</div>
+                <div class="home-text--point" style="animation: toggle 3s ease 4s infinite alternate;" >${homeContent[2]}</div>
+            </div>
+        </div>
+        <div class="home-right-image">
+            <img src="images/website.png" />
         </div>
     </div>
     `;
@@ -304,10 +309,20 @@ const navigateTo = (optn) => {
     elem.className += " active";
 
     view.innerHTML = menuItems[optn].callback.call(); //getHomeContent.call()
+
     document.title = menuItems[optn].name + " | Ashish Rai";
+
     let hem = document.getElementById("hamburger");
     if(hem.className!="fa fa-bars"){
         hamburgerHandler();
+    }
+
+    let body = document.getElementsByTagName("body")[0];
+    if(optn==0){
+        body.className += " home-active";
+    }
+    else{
+        body.className = "";
     }
 }
 
@@ -316,10 +331,16 @@ const submitForm = () => {
     let email = document.forms["contactForm"]["email"].value;
     let msg = document.forms["contactForm"]["msg"].value;
 
-    alert('Thanks for reaching out, I will be responding soon!!!');
+    if(name!="" && email != "" && msg != ""){
+        alert('Thanks for reaching out, I will be responding soon!!!');
+        document.forms["contactForm"].reset();
+    }
+    else{
+        alert("Please enter all the details before submitting");
+    }
+
     event.preventDefault();
     
-    document.forms["contactForm"].reset();
 }
 
 const hamburgerHandler = () => {

@@ -20,6 +20,11 @@ body {
     font-family: Arial;
 }
 
+@media screen and (min-width:600px) {   
+    body.home-active{
+        background: linear-gradient(135deg, var(--secondary),#06a2c1aa);
+    }
+}
 
 body div#main {
     margin: 0px 25px 25px;
