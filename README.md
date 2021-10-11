@@ -1,5 +1,5 @@
-# Ashish Rai
-### [Personal Portfolio](https://ashishrai96.github.io/)
+# SSD Assignment - 2 : Personal Homepage
+### [Ashish Rai's Personal Portfolio](https://ashishrai96.github.io/)
 ---
 ---
 
