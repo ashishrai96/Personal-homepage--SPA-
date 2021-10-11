@@ -12,3 +12,30 @@
 
 >Deployment
 * The page is currently up and running. You may [click here](https://ashishrai96.github.io/) or at the top **Personal Portfolio**
+
+>Folder Structure
+
+```
+├── images
+│   ├── website.png
+|   └── website1.png
+|
+├── scripts
+|   └── main.js
+|
+├── styles
+|   ├── font-awesome-4.7.0
+|   |   └── ...
+│   ├── about.css
+│   ├── contact.css
+│   ├── home.css
+│   ├── main.css
+│   ├── nav.css
+│   ├── skill.css
+|     
+├── index.html
+|
+├── .gitignore
+|
+└── README.md
+```
