@@ -1,5 +1,5 @@
-# Ashish Rai
-### [Personal Portfolio](https://ashishrai96.github.io/)
+# SSD Assignment - 2 : Personal Homepage
+### [Ashish Rai's Personal Portfolio](https://ashishrai96.github.io/)
 ---
 ---
 
@@ -11,4 +11,4 @@
 
 
 >Deployment
-* The page is currently up and running. You may [click here](https://ashishrai96.github.io/) or at the top **Personal Portfolio**
+* The page is currently up and running. You may [click here](https://ashishrai96.github.io/) or on the top of the text **Personal Portfolio**.
