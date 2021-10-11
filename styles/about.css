@@ -1,10 +1,18 @@
 .about {
     flex: 1;
     margin-top: 100px;
+    display: flex;
+}
+
+@media screen and (max-width:600px) {
+    .about {
+        flex-direction: column;
+    }
 }
 
 .about img.profile-image {
     border-radius: 50%;
+    margin-top: 50px;
 }
 
 .about .details {
@@ -29,6 +37,8 @@
 
 .about .details .link-label {
     color: var(--primary);
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 /* 

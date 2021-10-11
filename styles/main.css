@@ -6,10 +6,10 @@
 @import './nav.css';
 
 :root{
-    --primary: #00829c;
-    --primary-light: #06a2c1;
-    --secondary: #eee;
-    --black: #53565a;
+    --primary: #685335;
+    --primary-light: #b19268;
+    --secondary: #eee7dd;
+    --black: #433623;
     --gray: #ccc;
     --deep-gray: #97999b;
 }
@@ -22,7 +22,7 @@ body {
 
 @media screen and (min-width:600px) {   
     body.home-active{
-        background: linear-gradient(135deg, var(--secondary),#06a2c1aa);
+        background: linear-gradient(135deg, var(--secondary),var(--primary-light));
     }
 }
 
@@ -35,8 +35,9 @@ body div#main {
 footer.footer {
     padding: 10px;
     display: flex;
-    background-color: var(--gray);
+    background-color: var(--primary);
     margin: 0px -8px -8px;
+    color: var(--gray);
 }
 
 footer.footer .footer-body {
@@ -49,7 +50,7 @@ footer.footer .footer-body {
 
 footer.footer .footer-body .title {
     font-weight: 700;
-    color: var(--primary);
+    color: var(--gray);
     padding-left: 10px;
 }
 
@@ -63,7 +64,7 @@ footer.footer .footer-body .title {
 
 footer.footer .footer-body a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--gray);
     margin: 10px;
 }
 
@@ -77,7 +78,7 @@ footer.footer .time-container div#time {
     font-size: 14px;
     font-weight: 700;
     font-family: Arial;
-    color: var(--primary);
+    color: var(--gray);
 }
 
 h1{
